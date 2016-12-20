@@ -1,6 +1,6 @@
 <domain type='kvm'>
         <name>network-node</name>
-        <uuid>f5b8c05b-9c7a-3211-49b9-2bd635f8e4ae</uuid>
+        <uuid>f5b8c05b-9c7a-3212-49b9-2bd635f8e4ae</uuid>
         <memory unit='GiB'>3</memory>
         <currentMemory unit='GiB'>3</currentMemory>
         <vcpu>2</vcpu>
@@ -27,8 +27,7 @@
                 	<model type='virtio'/>
                 	<source network='ovs-net'/>
 	        </interface>
-	
-        	<interface type='network'>
+	       	<interface type='network'>
                 	<model type='virtio'/>
                 	<source network='ovs-net'/>
         	</interface>
