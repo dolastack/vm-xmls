@@ -1,8 +1,8 @@
 <domain type='kvm'>
         <name>compute-node</name>
         <uuid>f5b8c05b-9c7a-3211-49b9-2bd635f8e4ac</uuid>
-        <memory unit='GiB'>3</memory>
-        <currentMemory unit='GiB'>3</currentMemory>
+        <memory unit='GiB'>4</memory>
+        <currentMemory unit='GiB'>4</currentMemory>
         <vcpu>2</vcpu>
         <os>
                 <type arch='x86_64' machine='pc'>hvm</type>
