@@ -16,7 +16,7 @@
         <on_reboot>restart</on_reboot>
         <on_crash>destroy</on_crash>
         <devices>
-                <emulator>/usr/bin/qemu-system-x86_64</emulator>
+	<emulator>/usr/libexec/qemu-kvm</emulator>
                 <disk type='block' device='disk'>
                         <driver name='qemu' type='qcow2'/>
                         <source dev='/vm-disks/network-node.qcow2'/>

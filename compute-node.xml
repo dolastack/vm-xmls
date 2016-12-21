@@ -1,9 +1,9 @@
 <domain type='kvm'>
         <name>compute-node</name>
         <uuid>f5b8c05b-9c7a-3211-49b9-2bd635f8e4ac</uuid>
-        <memory unit='GiB'>4</memory>
-        <currentMemory unit='GiB'>4</currentMemory>
-    
+        <memory unit='GiB'>6</memory>
+        <currentMemory unit='GiB'>6</currentMemory>
+        <vcpu>5</vcpu> 
         <os>
                 <type arch='x86_64' machine='pc'>hvm</type>
                 <boot dev='hd'/>
@@ -16,7 +16,7 @@
         <on_reboot>restart</on_reboot>
         <on_crash>destroy</on_crash>
         <devices>
-                <emulator>/usr/bin/qemu-system-x86_64</emulator>
+	<emulator>/usr/libexec/qemu-kvm</emulator>
                 <disk type='block' device='disk'>
                         <driver name='qemu' type='qcow2'/>
                         <source dev='/vm-disks/compute-node.qcow2'/>
