@@ -23,7 +23,7 @@
                         <source dev='/vm-disks/network-node.qcow2'/>
 			<backingStore/>
                         <target dev='vda' bus='virtio'/>
-			<alias name='virtio-disk0'>
+			<alias name='virtio-disk0'/>
                 </disk>
         	<disk type='file' device='cdrom'>
       			<driver name='qemu' type='raw'/>
