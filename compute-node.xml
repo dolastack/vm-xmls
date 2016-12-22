@@ -23,7 +23,7 @@
                         <source dev='/vm-disks/compute-node.qcow2'/>
                         <backingStore/>
       			<target dev='vda' bus='virtio'/>
-     			<alias name='virtio-disk0'/>
+ 
                 </disk>
 		
           	<disk type='block' device='disk'>
@@ -31,7 +31,6 @@
                         <source dev='/vm-disks/compute-swift.qcow2'/>
                		<backingStore/>
       			<target dev='vdb' bus='virtio'/>
-     			<alias name='virtio-disk1'/>
                 </disk>
 		<disk type='file' device='cdrom'>
       			<driver name='qemu' type='raw'/>
