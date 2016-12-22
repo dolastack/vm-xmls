@@ -3,7 +3,7 @@
         <uuid>f5b8c05b-9c7a-3212-49b9-2bd635f8e4ae</uuid>
         <memory unit='GiB'>3</memory>
         <currentMemory unit='GiB'>3</currentMemory>
-        
+        <vcpu placement='static'>2</vcpu> 
         <os>
                 <type arch='x86_64' machine='pc'>hvm</type>
                 <boot dev='hd'/>
@@ -23,14 +23,14 @@
                         <source dev='/vm-disks/network-node.qcow2'/>
 			<backingStore/>
                         <target dev='vda' bus='virtio'/>
-			<alias name='virtio-disk0'/>
+
                 </disk>
         	<disk type='file' device='cdrom'>
       			<driver name='qemu' type='raw'/>
       			<backingStore/>
       			<target dev='hda' bus='ide'/>
       			<readonly/>
-      			<alias name='ide0-0-0'/>
+
 		</disk>
 		<interface type='network'>
                 	<model type='virtio'/>
