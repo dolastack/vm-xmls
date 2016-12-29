@@ -3,6 +3,7 @@
   <name>vnet</name>
   <uuid>dfe2a34e-c08a-496a-be8f-7d8edafe6ef1</uuid>
   <forward mode='nat'/>
+  <virtualport type='openvswitch'/>
   <ip address='192.168.1.1' netmask='255.255.255.0'>
     <dhcp>
       <range start='192.168.1.2 end=192.168.1.254'/>
