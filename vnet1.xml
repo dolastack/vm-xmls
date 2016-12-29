@@ -1,9 +1,9 @@
 
 <network >
-  <name>vnet1</name>
+  <name>ovnet1</name>
   <uuid>dfe2a34e-c08a-496a-be8f-7d8edafe6ef1</uuid>
   <forward mode='nat'/>
-  <bridge name='vnet1'/>
+  <bridge name='ovnet1'/>
   <virtualport type='openvswitch'/>
   <ip address='192.168.1.1' netmask='255.255.255.0'>
     <dhcp>
