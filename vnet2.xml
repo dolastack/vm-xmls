@@ -1,15 +1,12 @@
 
 <network connections='3'>
-  <name>ovs-net</name>
-  <uuid>dfe2a34e-c08a-496a-be8f-7d8edafe6ef0</uuid>
-  <forward mode='bridge'/>
-  <bridge name='br-ex'/>
-  <virtualport type='openvswitch'/>
-  <portgroup name='vlan-01' default='yes'>
-  </portgroup>
-  <portgroup name='vlan-444'>                                                                                                   
-    <vlan>                                                                                                                      
-      <tag id='444'/>                                                                                                           
-    </vlan>                                                                                                                     
-  </portgroup>                                                                                                                  
+  <name>vnet</name>
+  <uuid>dfe2a34e-c08a-496a-be8f-7d8edafe6ef1</uuid>
+  <forward mode='nat'/>
+  <ip address='192.168.1.1' netmask='255.255.255.0'>
+    <dhcp>
+      <range start='192.168.1.2 end=192.168.1.254'/>
+    </dhcp>
+  </ip>  
 </network>
+
