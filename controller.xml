@@ -1,0 +1,43 @@
+<domain type='kvm'>
+        <name>controller-node</name>
+        <uuid>f5b8c05b-9c7a-3211-49b9-2bd635f8c4ac</uuid>
+        <memory unit='GiB'>6</memory>
+        <currentMemory unit='GiB'>6</currentMemory>
+	<cpu mode='host-passthrough'>
+	</cpu>
+        <vcpu placement='static'>3</vcpu> 
+        <os>
+                <type arch='x86_64' machine='pc'>hvm</type>
+                <boot dev='hd'/>
+        </os>
+        <features>
+                <acpi/>
+		<apic/>
+        </features>
+        <clock offset='utc'/>
+        <on_poweroff>destroy</on_poweroff>
+        <on_reboot>restart</on_reboot>
+        <on_crash>destroy</on_crash>
+        <devices>
+		<emulator>/usr/bin/qemu-system-x86_64</emulator>
+                <disk type='block' device='disk'>
+                        <driver name='qemu' type='qcow2'/>
+                        <source dev='/vm-disks/controller-node.qcow2'/>
+			<backingStore/>
+                        <target dev='vda' bus='virtio'/>
+                </disk>
+		
+        	<interface type='network'>
+                	<model type='virtio'/>
+                	<source network='ovs-net'/>
+	        </interface>
+	
+        	<interface type='network'>
+                	<model type='virtio'/>
+                	<source network='ovs-net'/>
+        	</interface>
+
+        	<input type='mouse' bus='ps2'/>
+	        <graphics type='vnc' port='-1'/>
+        </devices>
+</domain>
