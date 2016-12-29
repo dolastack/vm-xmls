@@ -1,11 +1,11 @@
 
 <network connections='3'>
-  <name>vnet</name>
+  <name>vnet2</name>
   <uuid>dfe2a34e-c08a-496a-be8f-7d8edafe6ef1</uuid>
   <forward mode='nat'/>
-  <ip address='192.168.1.1' netmask='255.255.255.0'>
+  <ip address='192.168.2.1' netmask='255.255.255.0'>
     <dhcp>
-      <range start='192.168.1.2 end=192.168.1.254'/>
+      <range start='192.168.2.2 end=192.168.2.254'/>
     </dhcp>
   </ip>  
 </network>
