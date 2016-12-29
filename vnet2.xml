@@ -1,5 +1,5 @@
 
-<network connections='3'>
+<network>
   <name>vnet2</name>
   <uuid>dfe2a34e-c08a-496a-be8f-7d8edafe6ef1</uuid>
   <forward mode='nat'/>
