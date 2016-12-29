@@ -1,0 +1,15 @@
+
+<network connections='3'>
+  <name>ovs-net</name>
+  <uuid>dfe2a34e-c08a-496a-be8f-7d8edafe6ef0</uuid>
+  <forward mode='bridge'/>
+  <bridge name='br-ex'/>
+  <virtualport type='openvswitch'/>
+  <portgroup name='vlan-01' default='yes'>
+  </portgroup>
+  <portgroup name='vlan-444'>                                                                                                   
+    <vlan>                                                                                                                      
+      <tag id='444'/>                                                                                                           
+    </vlan>                                                                                                                     
+  </portgroup>                                                                                                                  
+</network>
