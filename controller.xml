@@ -1,6 +1,6 @@
 <domain type='kvm'>
         <name>controller-node</name>
-        <uuid>f5b8c05b-9c7a-3211-49b9-2bd635f8c4ac</uuid>
+        <uuid>f5b8c05b-9c7a-3212-49b9-2bd635f8c4a5</uuid>
         <memory unit='GiB'>6</memory>
         <currentMemory unit='GiB'>6</currentMemory>
 	<cpu mode='host-passthrough'>
@@ -22,7 +22,7 @@
 		<emulator>/usr/bin/qemu-system-x86_64</emulator>
                 <disk type='block' device='disk'>
                         <driver name='qemu' type='qcow2'/>
-                        <source dev='/vm-disks/controller-node.qcow2'/>
+                        <source dev='/vm-disks/controller.qcow2'/>
 			<backingStore/>
                         <target dev='vda' bus='virtio'/>
                 </disk>
