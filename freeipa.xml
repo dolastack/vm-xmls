@@ -1,11 +1,9 @@
 <domain type='kvm'>
         <name>freeipa</name>
-	<uuid>f5b8c05b-9c7a-3211-49b9-2bd635f8e4ac</uuid>
-	<memory unit='GiB'>6</memory>
-        <currentMemory unit='GiB'>6</currentMemory>
-	<cpu mode='host-passthrough'>
-	</cpu>
-	<vcpu placement='static'>4</vcpu> 
+        <uuid>f5b8c05b-9c7a-3211-49b9-2bd635f8c3b2</uuid>
+        <memory unit='GiB'>3</memory>
+        <currentMemory unit='GiB'>3</currentMemory>
+	
 	<os>
                 <type arch='x86_64' machine='pc'>hvm</type>
                 <boot dev='hd'/>
@@ -23,7 +21,7 @@
 		<emulator>/usr/bin/qemu-system-x86_64</emulator>
                 <disk type='block' device='disk'>
                         <driver name='qemu' type='qcow2'/>
-                        <source dev='/vm-disks/controller-node.qcow2'/>
+                        <source dev='/vm-disks/freeipa.qcow2'/>
 			<backingStore/>
                         <target dev='vda' bus='virtio'/>
                 </disk>
@@ -33,10 +31,6 @@
                 	<source network='ovs-net'/>
 	        </interface>
 	
-        	<interface type='network'>
-                	<model type='virtio'/>
-                	<source network='ovs-net'/>
-        	</interface>
 
         	<input type='mouse' bus='ps2'/>
 	        <graphics type='vnc' port='-1'/>
