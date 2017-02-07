@@ -1,6 +1,6 @@
 <domain type='kvm'>
-        <name>compute-node</name>
-        <uuid>f5b8c05b-9c7a-3211-49b9-2bd635f8e4ac</uuid>
+        <name>fuel-master</name>
+        <uuid>f5b8c05b-9c7a-3211-49b9-2cd635f8e4ab</uuid>
         <memory unit='GiB'>6</memory>
         <currentMemory unit='GiB'>6</currentMemory>
 	<cpu mode='host-passthrough'>
@@ -21,8 +21,8 @@
         <devices>
 	<emulator>/usr/libexec/qemu-kvm</emulator>
                 <disk type='block' device='disk'>
-                        <driver name='qemu' type='qcow2'/>
-                        <source dev='/vm-disks/compute-node.qcow2'/>
+                        <driver name='qemu' />
+                        <source dev='/vm-disks/fuel-community-10.0.iso'/>
                         <backingStore/>
       			<target dev='vda' bus='virtio'/>
  
@@ -30,10 +30,11 @@
 		
           	<disk type='block' device='disk'>
                         <driver name='qemu' type='qcow2'/>
-                        <source dev='/vm-disks/compute-swift.qcow2'/>
+                        <source dev='/vm-disks/fuel-master.qcow2'/>
                		<backingStore/>
       			<target dev='vdb' bus='virtio'/>
                 </disk>
+		
 		<disk type='file' device='cdrom'>
       			<driver name='qemu' type='raw'/>
       			<backingStore/>
