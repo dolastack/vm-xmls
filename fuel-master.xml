@@ -25,7 +25,7 @@
                         <driver name='qemu' type='qcow2'/>
                         <source dev='/vm-disks/fuel-master.qcow2'/>
                		<backingStore/>
-      			<target dev='vdb' bus='virtio'/>
+      			<target dev='vda' bus='virtio'/>
                 </disk>
 		
 			
