@@ -38,7 +38,7 @@
 		<disk type='file' device='cdrom'>
       			<driver name='qemu' type='raw'/>
       			<backingStore/>
-      			<target dev='vda' bus='ide'/>
+      			<target dev='vdc' bus='ide'/>
       			<readonly/>
 			<alias name='ide0-0-0'/>
 		</disk>
