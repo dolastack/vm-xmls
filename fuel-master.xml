@@ -20,14 +20,7 @@
         <on_crash>destroy</on_crash>
         <devices>
 	<emulator>/usr/bin/qemu-kvm</emulator>
-                <disk type='block' device='disk'>
-                        <driver name='qemu' />
-                        <source dev='/vm-disks/fuel-community-10.0.iso'/>
-                        <backingStore/>
-      			<target dev='vda' bus='virtio'/>
- 
-                </disk>
-		
+         	
           	<disk type='block' device='disk'>
                         <driver name='qemu' type='qcow2'/>
                         <source dev='/vm-disks/fuel-master.qcow2'/>
@@ -35,14 +28,7 @@
       			<target dev='vdb' bus='virtio'/>
                 </disk>
 		
-		<disk type='file' device='cdrom'>
-      			<driver name='qemu' type='raw'/>
-      			<backingStore/>
-      			<target dev='vdc' bus='ide'/>
-      			<readonly/>
-			<alias name='ide0-0-0'/>
-		</disk>
-		
+			
 		<interface type='network'>
                 	<model type='virtio'/>
                 	<source network='ovs-net'/>
