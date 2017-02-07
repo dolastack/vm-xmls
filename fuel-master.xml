@@ -8,7 +8,7 @@
         <vcpu placement='static'>4</vcpu> 
         <os>
                 <type arch='x86_64' machine='pc'>hvm</type>
-                <boot dev='hd'/>
+                <boot dev='cdrom'/>
         </os>
         <features>
                 <acpi/>
@@ -38,7 +38,7 @@
 		<disk type='file' device='cdrom'>
       			<driver name='qemu' type='raw'/>
       			<backingStore/>
-      			<target dev='hda' bus='ide'/>
+      			<target dev='vda' bus='ide'/>
       			<readonly/>
 			<alias name='ide0-0-0'/>
 		</disk>
