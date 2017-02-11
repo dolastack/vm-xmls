@@ -19,15 +19,14 @@
         <on_reboot>restart</on_reboot>
         <on_crash>destroy</on_crash>
         <devices>
-	<emulator>/usr/libexec/qemu-kvm</emulator>
+	<emulator>/bin/qemu-kvm</emulator>
                 <disk type='block' device='disk'>
                         <driver name='qemu' type='qcow2'/>
                         <source dev='/vm-disks/storage-node.qcow2'/>
                         <backingStore/>
       			<target dev='vda' bus='virtio'/>
  
-                </disk>
-		          	
+                </disk>          	
 		<disk type='file' device='cdrom'>
       			<driver name='qemu' type='raw'/>
       			<backingStore/>
