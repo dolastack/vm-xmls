@@ -1,5 +1,5 @@
 <domain type='kvm'>
-        <name>compute</name>
+        <name>centos</name>
         <uuid>f5b8c05b-9c7a-3215-49b9-2bd635f8e41c</uuid>
         <memory unit='GiB'>6</memory>
         <currentMemory unit='GiB'>6</currentMemory>
@@ -22,7 +22,7 @@
 	<emulator>/usr/libexec/qemu-kvm</emulator>
                 <disk type='block' device='disk'>
                         <driver name='qemu' type='qcow2'/>
-                        <source dev='/vm-disks/compute.qcow2'/>
+                        <source dev='/vm-disks/centos.qcow2'/>
                         <backingStore/>
       			<target dev='vda' bus='virtio'/>
  
