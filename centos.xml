@@ -28,12 +28,7 @@
  
                 </disk>
 		
-          	<disk type='block' device='disk'>
-                        <driver name='qemu' type='qcow2'/>
-                        <source dev='/vm-disks/compute-swift.qcow2'/>
-               		<backingStore/>
-      			<target dev='vdb' bus='virtio'/>
-                </disk>
+          
 		<disk type='file' device='cdrom'>
       			<driver name='qemu' type='raw'/>
       			<backingStore/>
